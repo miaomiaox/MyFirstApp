@@ -3,6 +3,7 @@
     package="com.xinluqishi.myfirstapp">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".WebViewActivity" />
+
+
+
+
+
+
     </application>
 
 </manifest>
