@@ -20,7 +20,7 @@ import javax.net.ssl.HttpsURLConnection;
  * Created by shikeyue on 17/7/8.
  */
 
-public class WebViewActivity extends AppCompatActivity implements View.OnClickListener {
+public class WebViewActivity extends AppCompatActivity {
 
     TextView responseText;
 
@@ -31,15 +31,14 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 
         Button sendRequest = (Button) findViewById(R.id.send_request);
         responseText = (TextView) findViewById(R.id.response_text);
-        sendRequest.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.send_request) {
-            sendRequestWithHttpURLConnection();
-        }
-
+        sendRequest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.send_request) {
+                    sendRequestWithHttpURLConnection();
+                }
+            }
+        });
     }
 
     private void sendRequestWithHttpURLConnection() {
@@ -49,7 +48,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
                 HttpsURLConnection sConnection = null;
                 BufferedReader reader = null;
                 try {
-                    URL url = new URL("http://www.baidu.com");
+                    URL url = new URL("https://www.baidu.com");
                     sConnection = (HttpsURLConnection) url.openConnection();
                     sConnection.setRequestMethod("GET");
                     sConnection.setConnectTimeout(8000);
@@ -72,12 +71,19 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
                 } catch (IOException e) {
                     e.printStackTrace();
                 } finally {
-                    sConnection.disconnect();
+                    if (reader != null) {
+                        try {
+                            reader.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    if (sConnection != null) {
+                        sConnection.disconnect();
+                    }
                 }
             }
-
-
-        });
+        }).start();
     }
 
     private void showResponse(final String response) {
