@@ -9,7 +9,7 @@ import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 
 @ContentView(R.layout.activity_second)
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends BaseActivity {
 
     private static final String TAG = "SecondActivity";
 

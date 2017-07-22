@@ -1,17 +1,24 @@
 package com.xinluqishi.myfirstapp;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import org.xutils.view.annotation.Event;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends BaseActivity {
+
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "MainActivity");
         setContentView(R.layout.activity_main);
 
         Button mainButton = (Button) findViewById(R.id.main_button);
@@ -46,6 +53,19 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(callIntent);
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.d(TAG, "onNewIntent, time=" + intent.getLongExtra("time", 0));
+    }
 
+    @Event(R.id.test_single_task)
+    private void testSingleTaskButton(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, MainActivity.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("time", System.currentTimeMillis());
+        startActivity(intent);
+    }
 
 }

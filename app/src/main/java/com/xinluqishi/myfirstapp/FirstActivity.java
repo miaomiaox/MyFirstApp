@@ -17,7 +17,7 @@ import org.xutils.view.annotation.Event;
  * Created by shikeyue on 17/7/8.
  */
 @ContentView(R.layout.activity_first)
-public class FirstActivity extends AppCompatActivity{
+public class FirstActivity extends BaseActivity{
 
     private static final String TAG = "FirstActivity";
 

@@ -20,7 +20,7 @@ import javax.net.ssl.HttpsURLConnection;
  * Created by shikeyue on 17/7/8.
  */
 
-public class WebViewActivity extends AppCompatActivity {
+public class WebViewActivity extends BaseActivity {
 
     TextView responseText;
 
