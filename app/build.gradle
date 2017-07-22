@@ -29,4 +29,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
+
+    compile 'org.xutils:xutils:3.5.0'
+
+
 }

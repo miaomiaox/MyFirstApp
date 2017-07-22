@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
+
+    <!-- first activity -->
+    <string name="to_second">SmartButton</string>
+
+    <!-- second activity -->
+    <string name="smart_button">SmartButton</string>
+
 </resources>
