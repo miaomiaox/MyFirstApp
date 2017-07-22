@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,10 +19,12 @@ import org.xutils.view.annotation.Event;
 @ContentView(R.layout.activity_first)
 public class FirstActivity extends AppCompatActivity{
 
+    private static final String TAG = "FirstActivity";
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first);
+        Log.d(TAG, "OnCreate");
     }
 
     @Override

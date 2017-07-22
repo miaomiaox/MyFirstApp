@@ -2,7 +2,7 @@
     <string name="app_name">MyFirstApp</string>
 
     <!-- first activity -->
-    <string name="to_second">SmartButton</string>
+    <string name="to_second">toSecondButton</string>
 
     <!-- second activity -->
     <string name="smart_button">SmartButton</string>
