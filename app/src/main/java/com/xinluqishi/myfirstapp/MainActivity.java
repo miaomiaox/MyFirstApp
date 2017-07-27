@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.xinluqishi.myfirstapp.bean.UserManager;
+
 import org.xutils.view.annotation.Event;
 
 
@@ -51,6 +53,10 @@ public class MainActivity extends BaseActivity {
 //            return;
 //        }
 //        startActivity(callIntent);
+
+        UserManager.staUserId = 2;
+        Log.d(TAG, "staUserId:" + UserManager.staUserId);
+
     }
 
     @Override
@@ -65,6 +71,13 @@ public class MainActivity extends BaseActivity {
         intent.setClass(MainActivity.this, MainActivity.class);
 //        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("time", System.currentTimeMillis());
+        startActivity(intent);
+    }
+
+    @Event(R.id.to_second)
+    private void toSecondButton(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, SecondActivity.class);
         startActivity(intent);
     }
 

@@ -1,9 +1,10 @@
 package com.xinluqishi.myfirstapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.xinluqishi.myfirstapp.bean.UserManager;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -17,6 +18,7 @@ public class SecondActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "OnCreate");
+        Log.d(TAG, "staUserId:" + UserManager.staUserId);
     }
 
     @Event(R.id.smart_button_click)
