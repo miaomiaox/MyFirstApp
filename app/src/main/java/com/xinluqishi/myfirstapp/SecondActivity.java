@@ -23,7 +23,8 @@ public class SecondActivity extends BaseActivity {
 
     @Event(R.id.smart_button_click)
     private void skipToAnotherButton(View view) {
-
+        Log.d(TAG, "OnCreate");
+        Log.d(TAG, "staUserId:" + UserManager.staUserId);
     }
 
 }

@@ -1,18 +1,18 @@
 package com.xinluqishi.myfirstapp;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import com.xinluqishi.myfirstapp.bean.UserManager;
+import com.xinluqishi.myfirstapp.ui.ipcClient.MessengerActivity;
 
+import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 
-
+@ContentView(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
@@ -21,7 +21,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "MainActivity");
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
 
         Button mainButton = (Button) findViewById(R.id.main_button);
         mainButton.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +78,13 @@ public class MainActivity extends BaseActivity {
     private void toSecondButton(View view) {
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, SecondActivity.class);
+        startActivity(intent);
+    }
+
+    @Event(R.id.to_messenger_service)
+    private void toMessengerService(View view) {
+        Intent intent = new Intent();
+        intent.setClass(this, MessengerActivity.class);
         startActivity(intent);
     }
 
