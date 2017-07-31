@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.xinluqishi.myfirstapp.bean.UserManager;
+import com.xinluqishi.myfirstapp.ui.SubThreadActivity;
 import com.xinluqishi.myfirstapp.ui.ipcClient.MessengerActivity;
 
 import org.xutils.view.annotation.ContentView;
@@ -85,6 +86,13 @@ public class MainActivity extends BaseActivity {
     private void toMessengerService(View view) {
         Intent intent = new Intent();
         intent.setClass(this, MessengerActivity.class);
+        startActivity(intent);
+    }
+
+    @Event(R.id.to_sub_thread_activity)
+    private void toSubThreadButton(View view) {
+        Intent intent = new Intent();
+        intent.setClass(this, SubThreadActivity.class);
         startActivity(intent);
     }
 

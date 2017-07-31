@@ -46,5 +46,11 @@
         android:layout_height="wrap_content"
         android:text="to_messenger_service"/>
 
+    <Button
+        android:id="@+id/to_sub_thread_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To_SubThreadActivity"/>
+
 
 </LinearLayout>
