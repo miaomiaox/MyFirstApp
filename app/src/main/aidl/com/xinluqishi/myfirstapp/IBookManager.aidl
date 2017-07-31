@@ -4,6 +4,7 @@ package com.xinluqishi.myfirstapp;
 // Declare any non-default types here with import statements
 
 import com.xinluqishi.myfirstapp.bean.Book;
+import com.xinluqishi.myfirstapp.INewBookArrivedListener;
 
 interface IBookManager {
 
@@ -12,6 +13,9 @@ interface IBookManager {
 
     void addBook(in Book book);
 
+    void registerListener(INewBookArrivedListener listener);
+
+    void unregisterListener(INewBookArrivedListener listener);
 
     /**
      * Demonstrates some basic types that you can use as parameters
