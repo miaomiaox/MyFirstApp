@@ -10,6 +10,7 @@ import com.xinluqishi.myfirstapp.binder.IBookBinder;
 import java.util.List;
 
 /**
+ * 自己手动实现Binder
  * Created by shikeyue on 2017/7/30.
  */
 

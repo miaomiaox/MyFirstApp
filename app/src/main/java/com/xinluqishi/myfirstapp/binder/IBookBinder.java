@@ -4,12 +4,14 @@ import android.os.IInterface;
 import android.os.RemoteException;
 
 import com.xinluqishi.myfirstapp.IBookManager;
+import com.xinluqishi.myfirstapp.INewBookArrivedListener;
 import com.xinluqishi.myfirstapp.bean.Book;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 自己手动实现Binder
  * Created by shikeyue on 2017/7/30.
  */
 
@@ -41,6 +43,16 @@ public interface IBookBinder extends IInterface {
                     mBookList.add(book);
                 }
             }
+        }
+
+        @Override
+        public void registerListener(INewBookArrivedListener listener) throws RemoteException {
+
+        }
+
+        @Override
+        public void unregisterListener(INewBookArrivedListener listener) throws RemoteException {
+
         }
 
         @Override
