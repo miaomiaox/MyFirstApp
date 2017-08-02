@@ -8,6 +8,7 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 
 import com.xinluqishi.myfirstapp.IBookManager;
+import com.xinluqishi.myfirstapp.INewBookArrivedListener;
 import com.xinluqishi.myfirstapp.bean.Book;
 
 import java.util.List;
@@ -33,6 +34,16 @@ public class BookService extends Service {
         @Override
         public void addBook(Book book) throws RemoteException {
             mBookList.add(book);
+        }
+
+        @Override
+        public void registerListener(INewBookArrivedListener listener) throws RemoteException {
+
+        }
+
+        @Override
+        public void unregisterListener(INewBookArrivedListener listener) throws RemoteException {
+
         }
 
         @Override

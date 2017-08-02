@@ -17,7 +17,7 @@ import java.util.List;
 
 public interface IBookBinder extends IInterface {
 
-    public static final java.lang.String DESCRIPTOR = "com.xinluqishi.myfirstapp.IBookManager";
+    public static final java.lang.String DESCRIPTOR = "com.xinluqishi.myfirstapp.binder.IBookBinder";
 
     static final int TRANSACTION_getBookList = (android.os.IBinder.FIRST_CALL_TRANSACTION + 0);
     static final int TRANSACTION_addBook = (android.os.IBinder.FIRST_CALL_TRANSACTION + 1);
