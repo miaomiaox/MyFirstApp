@@ -3,12 +3,13 @@ package com.xinluqishi.myfirstapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.xinluqishi.myfirstapp.ui.base.BaseActivity;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -17,7 +18,7 @@ import org.xutils.view.annotation.Event;
  * Created by shikeyue on 17/7/8.
  */
 @ContentView(R.layout.activity_first)
-public class FirstActivity extends BaseActivity{
+public class FirstActivity extends BaseActivity {
 
     private static final String TAG = "FirstActivity";
 

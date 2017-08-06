@@ -1,4 +1,4 @@
-package com.xinluqishi.myfirstapp;
+package com.xinluqishi.myfirstapp.ui.base;
 
 import android.app.Application;
 import android.os.Bundle;

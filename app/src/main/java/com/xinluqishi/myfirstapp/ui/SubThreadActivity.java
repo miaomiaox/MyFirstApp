@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.xinluqishi.myfirstapp.BaseActivity;
+import com.xinluqishi.myfirstapp.ui.base.BaseActivity;
 import com.xinluqishi.myfirstapp.R;
 
 import org.xutils.view.annotation.ContentView;

@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.xinluqishi.myfirstapp.bean.UserManager;
 import com.xinluqishi.myfirstapp.ui.SubThreadActivity;
+import com.xinluqishi.myfirstapp.ui.base.BaseActivity;
 import com.xinluqishi.myfirstapp.ui.ipcClient.MessengerActivity;
 
 import org.xutils.view.annotation.ContentView;

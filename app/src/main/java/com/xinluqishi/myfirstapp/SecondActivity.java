@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.xinluqishi.myfirstapp.bean.UserManager;
+import com.xinluqishi.myfirstapp.ui.base.BaseActivity;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;

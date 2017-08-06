@@ -21,17 +21,17 @@ public class BookBinder extends Binder implements IBookBinder {
         this.attachInterface(this, DESCRIPTOR);
     }
 
-    public static IBookBinder asInterface(android.os.IBinder obj)
-    {
-        if ((obj==null)) {
-            return null;
-        }
-        android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
-        if (((iin!=null)&&(iin instanceof IBookBinder))) {
-            return ((IBookBinder)iin);
-        }
-        return new BookBinder.Proxy(obj);
-    }
+//    public static IBookBinder asInterface(android.os.IBinder obj)
+//    {
+//        if ((obj==null)) {
+//            return null;
+//        }
+//        android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
+//        if (((iin!=null)&&(iin instanceof IBookBinder))) {
+//            return ((IBookBinder)iin);
+//        }
+//        return new BookBinder.Proxy(obj);
+//    }
 
     @Override
     public IBinder asBinder() {
