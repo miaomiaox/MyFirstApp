@@ -6,5 +6,5 @@ import com.xinluqishi.myfirstapp.ui.base.BaseActivity;
  * Created by shikeyue on 2017/8/6.
  */
 
-public class LoginActivity extends BaseActivity {
+public class LoginActivity extends BaseActivity implements ILoginView {
 }
