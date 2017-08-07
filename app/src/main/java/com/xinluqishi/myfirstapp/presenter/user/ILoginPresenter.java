@@ -5,4 +5,7 @@ package com.xinluqishi.myfirstapp.presenter.user;
  */
 
 public interface ILoginPresenter {
+    void setProgressBarVisiblity(int invisible);
+
+    void doLogin(String username, String password);
 }
