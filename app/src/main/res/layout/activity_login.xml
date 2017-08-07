@@ -1,89 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_from"
+    android:id="@+id/login_form"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.tbi.app.tbishop.view.component.CPCommonHeader
-        android:id="@+id/p_login_cp_header"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        custom:header_title="@string/p_login_title"
-        custom:btn_name="@string/p_login_reg"
-        custom:btn_visibility="true"
-        />
+        android:layout_height="@dimen/ll_input_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_medium">
+
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_input_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_medium">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_medium"
         android:orientation="vertical">
 
-        <!-- 手机号 -->
-        <LinearLayout
+        <Button
+            android:text="@string/btn_login"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/ll_input_height"
-            android:gravity="center_vertical"
-            android:paddingLeft="@dimen/spacing_medium">
-
-            <EditText
-                android:id="@+id/p_login_et_username"
-                style="@style/et_common"
-                android:hint="@string/phone_hint"
-                android:inputType="phone"
-                android:tag="username"/>
-        </LinearLayout>
-
-        <View
-            style="@style/seg_list_line"
-            android:layout_marginLeft="@dimen/spacing_medium" />
-        <!-- 密码 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/ll_input_height"
-            android:gravity="center_vertical"
-            android:paddingLeft="@dimen/spacing_medium">
-
-            <EditText
-                android:id="@+id/p_login_et_password"
-                style="@style/et_common"
-                android:hint="@string/password_hint"
-                android:inputType="textPassword"
-                android:tag="password"/>
-        </LinearLayout>
-    </LinearLayout>
-    <!-- 提交表单 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_large"
-        android:layout_marginLeft="@dimen/spacing_medium"
-        android:layout_marginRight="@dimen/spacing_medium">
+            android:layout_height="match_parent" />
 
         <Button
-            android:id="@+id/p_login_btn_submit"
-            style="@style/btn_common_large"
-            android:text="@string/login" />
+            android:text="@string/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
     </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/spacing_medium"
-        >
-        <TextView
-            android:id="@+id/p_login_tv_c_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:textSize="@dimen/sp_14"
-            android:textColor="@color/base_link"
-            android:text="@string/p_login_clogin" />
-        <TextView
-            android:id="@+id/p_login_tv_find_pwd"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="@dimen/sp_14"
-            android:textColor="@color/base_link"
-            android:text="@string/p_login_find_pwd"/>
-    </RelativeLayout>
+
 </LinearLayout>
