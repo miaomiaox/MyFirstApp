@@ -2,4 +2,41 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- text size -->
+    <!--<dimen name="text_size_xxsmall"></dimen>-->
+    <!--<dimen name="text_size_xsmall"></dimen>-->
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <!--<dimen name="text_size_xlarge"></dimen>-->
+
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_content3">14dp</dimen>
+
+    <dimen name="text_size_title">18sp</dimen>
+
+    <!-- margin or padding -->
+    <!--<dimen name="spacing_tiny"></dimen>-->
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_medium">15dp</dimen>
+    <dimen name="spacing_large">30dp</dimen>
+    <dimen name="spacing_5">5dp</dimen>
+    <!--<dimen name="spacing_huge"></dimen>-->
+
+
+    <dimen name="space_40">40dp</dimen>
+
+    <!-- typical sizes of views -->
+    <dimen name="button_height_small">30dp</dimen>
+    <dimen name="button_height_medium">47dp</dimen>
+    <!--<dimen name="button_height_large"></dimen>-->
+    <!--输入框高-->
+    <dimen name="ll_input_height">44dp</dimen>
+
 </resources>

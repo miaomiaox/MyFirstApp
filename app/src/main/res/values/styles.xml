@@ -8,4 +8,115 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--&lt;!&ndash;水平分割线&ndash;&gt;-->
+    <!--<style name="seg_list_line">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">0.5dp</item>-->
+        <!--<item name="android:background">@color/seg_line</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <!--<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; 输入框基本样式 &ndash;&gt;-->
+    <!--<style name="et_common">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">match_parent</item>-->
+        <!--<item name="android:background">@null</item>-->
+        <!--<item name="android:singleLine">true</item>-->
+        <!--<item name="android:textColorHint">@color/base_sub_txt</item>-->
+        <!--<item name="android:textColor">@color/base_main_txt</item>-->
+        <!--<item name="android:textSize">@dimen/sp_16</item>-->
+        <!--<item name="android:textCursorDrawable">@drawable/edit_cursor_color</item>-->
+    <!--</style>-->
+
+    <!--白色文字-->
+    <!--<style name="txt_common_white">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash;img 背景站位颜色&ndash;&gt;-->
+    <!--<style name="img_base_bg">-->
+        <!--<item name="android:background">@color/base_bg</item>-->
+    <!--</style>-->
+    <!--圆角边框margin2030030padding30基本样式-->
+    <style name="box_radio3_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_medium</item>
+        <item name="android:layout_marginRight">@dimen/spacing_medium</item>
+        <item name="android:layout_marginTop">@dimen/spacing_small</item>
+        <!--<item name="android:background">@drawable/shape_common_rectangle_3w</item>-->
+        <item name="android:paddingLeft">@dimen/spacing_medium</item>
+        <item name="android:paddingRight">@dimen/spacing_medium</item>
+    </style>
+    <!--seg竖着的一条间隔线-->
+    <style name="seg_line_vertical">
+        <!--<item name="android:background">@color/seg_line</item>-->
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--基本tv main-->
+    <style name="txt_main_sp13">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <!--<item name="android:textColor">@color/base_main_txt</item>-->
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+    <!--基本menber_list-->
+    <style name="layout_common_list44">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <!--<item name="android:background">@color/white</item>-->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/spacing_medium</item>
+        <item name="android:paddingRight">@dimen/spacing_medium</item>
+    </style>
+    <!--txt_main_sp17-->
+    <style name="txt_main_sp17" parent="txt_main_sp13">
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!--弹出-->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--txt_main_sp16-->
+    <style name="txt_main_sp16" parent="txt_main_sp13">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--txt_main_sp16-->
+    <style name="txt_main_sp14" parent="txt_main_sp13">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--txt_main_sp11-->
+    <style name="txt_main_sp11" parent="txt_main_sp13">
+        <item name="android:textSize">11sp</item>
+    </style>
+    <!--&lt;!&ndash;txt_main_sp12_con&ndash;&gt;-->
+    <!--<style name="txt_con_sp12" parent="txt_main_sp13">-->
+        <!--<item name="android:textSize">12sp</item>-->
+        <!--<item name="android:textColor">@color/base_con_txt</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash;txt_main_sp12_con&ndash;&gt;-->
+    <!--<style name="txt_con_sp13_center_v" parent="txt_main_sp13">-->
+        <!--<item name="android:textColor">@color/base_con_txt</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+    <!--</style>-->
+    <!--水平分割线15dp-->
+    <!--<style name="seg_list_line_15dp" parent="@style/seg_list_line">-->
+        <!--<item name="android:layout_marginLeft">15dp</item>-->
+        <!--<item name="android:layout_marginRight">15dp</item>-->
+    <!--</style>-->
+
 </resources>
