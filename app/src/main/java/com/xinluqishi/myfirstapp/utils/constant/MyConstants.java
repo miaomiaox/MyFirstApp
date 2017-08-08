@@ -7,6 +7,8 @@ public interface MyConstants {
 
     interface BaseConstants {
         int MSG_FROM_CLIENT = 1;
+        String WIN_RESULT="winResult";//标识窗体类型
+        int WIN_SELECT_DATE = 2001;                   //选择日期
     }
 
 
@@ -17,6 +19,7 @@ public interface MyConstants {
         String IS_END_DATE_INPUT = "isEndDateInput";                //是否在结束时间输入框触发时间控件
         String IS_SINGLE_DATE_WIDGET = "isSingleDateWidget";        //仅有一个控件，调用日期控件的出发点不是一个日期范围
         String TYPE_MARK = "typeMark";                  //标明日期控件的文字显示是关于哪种类型的
+        String DATE_SINGLE = "1";
     }
 
 
