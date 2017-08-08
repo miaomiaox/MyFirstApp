@@ -8,14 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--&lt;!&ndash;水平分割线&ndash;&gt;-->
-    <!--<style name="seg_list_line">-->
-        <!--<item name="android:layout_width">match_parent</item>-->
-        <!--<item name="android:layout_height">0.5dp</item>-->
-        <!--<item name="android:background">@color/seg_line</item>-->
-        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
-        <!--<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>-->
-    <!--</style>-->
+    <!--水平分割线-->
+    <style name="seg_list_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/seg_line</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
 
     <!--&lt;!&ndash; 输入框基本样式 &ndash;&gt;-->
     <!--<style name="et_common">-->

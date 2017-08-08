@@ -11,4 +11,7 @@
     <string name="btn_login">login</string>
     <string name="btn_clear">clear</string>
 
+    <!-- DatePicker -->
+    <string name="hotel_date_confirm_header">选择日期</string>
+
 </resources>
