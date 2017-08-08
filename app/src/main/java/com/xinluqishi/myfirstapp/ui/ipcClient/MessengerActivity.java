@@ -25,7 +25,7 @@ public class MessengerActivity extends Activity {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mService = new Messenger(service);
-            Message msg = Message.obtain(null, MyConstants.MSG_FROM_CLIENT);
+            Message msg = Message.obtain(null, MyConstants.BaseConstants.MSG_FROM_CLIENT);
             Bundle data = new Bundle();
             data.putString("msg", "hello, this is client.");
             msg.setData(data);

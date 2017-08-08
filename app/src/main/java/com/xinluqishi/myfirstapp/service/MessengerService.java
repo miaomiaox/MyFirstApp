@@ -26,7 +26,7 @@ public class MessengerService extends Service {
         public void handleMessage(Message msg) {
 
             switch (msg.what) {
-                case MyConstants.MSG_FROM_CLIENT:
+                case MyConstants.BaseConstants.MSG_FROM_CLIENT:
                     Log.i(TAG, "receive message from client:" + msg.getData().getString("msg"));
                     break;
                 default:
