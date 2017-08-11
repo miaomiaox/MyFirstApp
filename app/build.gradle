@@ -27,6 +27,12 @@ android {
         }
     }
 
+    //开启更多图片模式
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
 }
 
 dependencies {
